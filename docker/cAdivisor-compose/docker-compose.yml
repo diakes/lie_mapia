@@ -1,0 +1,38 @@
+version: '3.3'
+services:
+  cAdivsor:
+    image: google/cadvisor
+    restart: always
+    privileged: true
+    volumes:
+    - /:/rootfs:ro
+    - /var/run:/var/run:rw
+    - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    - /dev/disk/:/dev/disk:ro
+
+    ports:
+    - '8085:8080'
+  # cAdivsor-game-server:
+  #   image: gcr.io/google-containers/cadvisor:v0.33.0
+  #   restart: always
+  #   privileged: true
+  #   volumes:
+  #   - /:/rootfs:ro
+  #   - /var/run:/var/run:rw
+  #   - /sys/fs/cgroup:/sys/fs/cgroup:ro
+  #   - /dev/disk/:/dev/disk:ro
+
+  #   ports:
+  #   - '8081:8081'
+  # cAdivsor-kafka-server:
+  #   image: gcr.io/google-containers/cadvisor:v0.33.0
+  #   restart: always
+  #   privileged: true
+  #   volumes:
+  #   - /:/rootfs:ro
+  #   - /var/run:/var/run:rw
+  #   - /sys/fs/cgroup:/sys/fs/cgroup:ro
+  #   - /dev/disk/:/dev/disk:ro
+
+  #   ports:
+  #   - '9092:9092'

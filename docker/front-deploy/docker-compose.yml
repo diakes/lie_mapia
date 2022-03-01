@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8000:8000"
+    volumes:
+      - ./build:/usr/share/nginx/html
+      - ./nginx-conf:/etc/nginx/conf.d
+      - ./cert:/ssl
+    stdin_open: true
+    tty: true

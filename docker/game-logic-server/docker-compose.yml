@@ -1,0 +1,7 @@
+version: "3"
+services:
+  game-logic-app:
+    image: diakes/game-service:2.0.6
+    ports:
+      - 8081:8081
+
