@@ -53,7 +53,7 @@
 
 ## 프로젝트 상세 설명
 
-//기술 스택, 시스템 구성도, ERD, 기능 상세 설명 등
+기술 스택, 시스템 구성도, ERD, 기능 상세 설명 등
 
 - 개발 환경
 
@@ -61,8 +61,8 @@
     - React
   - 백엔드
     - SpringBoot
-
-  ​
+    - Redis
+    - Kafka(Message Broker)
 
 ## Backend Architecture
 ![backend-structure](/design/uploads/backend-architecture.png)
