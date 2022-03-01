@@ -65,4 +65,4 @@
     - Kafka(Message Broker)
 
 ## Backend Architecture
-![backend-structure](/design/uploads/backend-architecture.png)
+![image](https://user-images.githubusercontent.com/48264447/156191264-b75b7321-9d14-4ec8-8f5a-1c866da7d9f5.png)
